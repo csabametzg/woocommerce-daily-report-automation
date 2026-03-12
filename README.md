@@ -67,7 +67,7 @@ Gross revenue yesterday:    89 500 Ft
 
 ## Example Report Screenshot 1
 
-![WooCommerce Daily Report](report_example.png)
+![woocommerce-daily-report-automation](report_example.png)
 
 
 
@@ -98,5 +98,6 @@ Gross revenue yesterday:    89 500 Ft
 - Add logging
 - Add retry handling for failed requests
 - Add separate product sales summary
+
 
 
