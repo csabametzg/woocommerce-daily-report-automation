@@ -37,7 +37,6 @@ This script automates the entire process and sends a daily report via email.
 
 ![WooCommerce Daily Report](images/report_example2.png)
 
-## Example Report Screenshot 3
 
 ![WooCommerce Daily Report](images/report_example3.png)
 
@@ -95,6 +94,7 @@ Gross revenue yesterday:    89 500 Ft
 - Add logging
 - Add retry handling for failed requests
 - Add separate product sales summary
+
 
 
 
