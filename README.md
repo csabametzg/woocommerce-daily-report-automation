@@ -1,82 +1,47 @@
-\# WooCommerce Daily Report Automation
+# WooCommerce Daily Report Automation
 
+Python automation script that retrieves WooCommerce order data, calculates daily revenue, checks low-stock products and sends an automated email report.
 
-Python automation script that connects to the WooCommerce REST API, retrieves the previous day's order data, checks low-stock products, and sends an automated email report.
+## 🚀 Features
 
+• Connects to WooCommerce REST API  
+• Retrieves yesterday's orders with pagination  
+• Calculates total daily revenue  
+• Detects low-stock products  
+• Sends automated email report via SMTP  
 
+## 🧰 Tech Stack
 
-\## Features
+Python  
+WooCommerce REST API  
+SMTP email automation  
+Environment variables (.env)
 
+## 📦 Example Use Case
 
-\- Connects to the WooCommerce REST API
-\- Retrieves all orders from yesterday using pagination
-\- Filters orders by status
-\- Calculates gross daily revenue
-\- Prints a detailed order summary
-\- Detects products below a low-stock threshold
-\- Sends the full report by email automatically
+Online store owners often need a daily report about:
 
+- how many orders were placed yesterday
+- total daily revenue
+- which products are running out of stock
 
-\## Use Case
+This script automates the entire process and sends a daily report via email.
 
-
-This script was built to automate repetitive daily reporting tasks for WooCommerce stores.
-
-It can help store owners or marketers quickly see:
-
-
-\- how many orders arrived yesterday
-\- total gross revenue
-\- detailed order items
-\- products that are running low on stock
-
-
-
-\## Tech Stack
-
-
-\- Python
-\- Requests
-\- WooCommerce REST API
-\- SMTP email sending
-
-
-
-\## Environment Variables
-
-
-Create a `.env` file based on `.env.example` and fill in your own credentials.
-
-
-Required variables:
-
-
-\- `BASE\_URL\_NAME`
-\- `WC\_CK`
-\- `WC\_CS`
-\- `SMTP\_HOST\_NAME`
-\- `SMTP\_USER\_NAME`
-\- `SMTP\_PASS`
-\- `TO\_EMAIL\_ADDRESS`
-
-
-
-\## Installation
-
+## ⚙️ Installation
 
 ```bash
-
+git clone https://github.com/csabametzg/woocommerce-daily-report-automation.git
+cd woocommerce-daily-report-automation
 pip install -r requirements.txt
 
 
-
-\## Run
+## ▶ Run
 
 python main.py
 
 
 
-\## Example Output
+## Example Output
 
 ====== Yesterday's WooCommerce Report ======
 Period (Budapest): 2026-03-11 00:00  →  2026-03-12 00:00
@@ -100,7 +65,7 @@ Gross revenue yesterday:    89 500 Ft
 
 
 
-\## Notes
+## Notes
 
 - Credentials are loaded from environment variables.
 - Do not commit real API keys or SMTP passwords to GitHub.
@@ -108,10 +73,11 @@ Gross revenue yesterday:    89 500 Ft
 - The script sends plain-text email reports.
 
 
-\## Future Improvements
+## Future Improvements
 
 - Export report to CSV
 - Add HTML email formatting
 - Add logging
 - Add retry handling for failed requests
 - Add separate product sales summary
+
