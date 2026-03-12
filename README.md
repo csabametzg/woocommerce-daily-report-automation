@@ -27,23 +27,6 @@ Online store owners often need a daily report about:
 
 This script automates the entire process and sends a daily report via email.
 
-## ⚙️ Installation
-
-```bash
-git clone https://github.com/csabametzg/woocommerce-daily-report-automation.git
-cd woocommerce-daily-report-automation
-pip install -r requirements.txt
-
-
-## ▶ Run
-
-python main.py
-
-
-
-
-
-
 
 ## Example Report Screenshot 1
 
@@ -63,6 +46,43 @@ python main.py
 
 
 
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/csabametzg/woocommerce-daily-report-automation.git
+cd woocommerce-daily-report-automation
+pip install -r requirements.txt
+
+
+## ▶ Run
+
+python main.py
+
+
+## Example Output
+
+====== Yesterday's WooCommerce Report ======
+Period (Budapest): 2026-03-11 00:00  →  2026-03-12 00:00
+Statuses: processing,completed,on-hold
+
+— — — — — New Orders (Detailed) — — — — —
+
+Order #1234 | John Smith
+  Payment: Credit Card | Status: completed | Amount: 19 900 Ft
+  Items:
+   - Python Workbook × 1
+   - Cheat Sheet × 1
+
+— — — — — Summary — — — — —
+Number of orders yesterday: 5
+Gross revenue yesterday:    89 500 Ft
+
+====== Low Stock ( < 30 pcs ) ======
+- Python Workbook | SKU: PW-001 -> 12 pcs
+- ChatGPT Ebook | SKU: CGPT-01 -> 8 pcs
+
+
+
 ## Notes
 
 - Credentials are loaded from environment variables.
@@ -78,6 +98,7 @@ python main.py
 - Add logging
 - Add retry handling for failed requests
 - Add separate product sales summary
+
 
 
 
