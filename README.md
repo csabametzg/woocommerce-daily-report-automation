@@ -4,11 +4,11 @@ Python automation script that retrieves WooCommerce order data, calculates daily
 
 ### Features
 
-• Connects to WooCommerce REST API  
-• Retrieves yesterday's orders with pagination  
-• Calculates total daily revenue  
-• Detects low-stock products  
-• Sends automated email report via SMTP  
+- Connects to WooCommerce REST API  
+- Retrieves yesterday's orders with pagination  
+- Calculates total daily revenue  
+- Detects low-stock products  
+- Sends automated email report via SMTP  
 
 ### Tech Stack
 
