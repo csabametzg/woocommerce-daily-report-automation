@@ -12,10 +12,10 @@ Python automation script that retrieves WooCommerce order data, calculates daily
 
 ### Tech Stack
 
-Python  
-WooCommerce REST API  
-SMTP email automation  
-Environment variables (.env)
+- Python  
+- WooCommerce REST API  
+- SMTP email automation  
+- Environment variables (.env)
 
 ### Example Use Case
 
