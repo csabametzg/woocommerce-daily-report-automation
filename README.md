@@ -2,7 +2,7 @@
 
 Python automation script that retrieves WooCommerce order data, calculates daily revenue, checks low-stock products and sends an automated email report.
 
-## 🚀 Features
+### Features
 
 • Connects to WooCommerce REST API  
 • Retrieves yesterday's orders with pagination  
@@ -10,14 +10,14 @@ Python automation script that retrieves WooCommerce order data, calculates daily
 • Detects low-stock products  
 • Sends automated email report via SMTP  
 
-## 🧰 Tech Stack
+### Tech Stack
 
 Python  
 WooCommerce REST API  
 SMTP email automation  
 Environment variables (.env)
 
-## 📦 Example Use Case
+### Example Use Case
 
 Online store owners often need a daily report about:
 
@@ -29,11 +29,11 @@ This script automates the entire process and sends a daily report via email.
 
 
 
-## Example Report Screenshot 1
+### Example Report Screenshot 1
 
 ![WooCommerce Daily Report](images/report_example.png)
 
-## Example Report Screenshot 2
+### Example Report Screenshot 2
 
 ![WooCommerce Daily Report](images/report_example2.png)
 
@@ -42,21 +42,25 @@ This script automates the entire process and sends a daily report via email.
 
 
 
-## ⚙️ Installation
+### Installation
 
 ```bash
 git clone https://github.com/csabametzg/woocommerce-daily-report-automation.git
 cd woocommerce-daily-report-automation
 pip install -r requirements.txt
+```
 
 
-## ▶ Run
+### Run
 
+```text
 python main.py
+```
 
 
-## Example Output
+### Example Output
 
+```text
 ====== Yesterday's WooCommerce Report ======
 Period (Budapest): 2026-03-11 00:00  →  2026-03-12 00:00
 Statuses: processing,completed,on-hold
@@ -76,10 +80,10 @@ Gross revenue yesterday:    89 500 Ft
 ====== Low Stock ( < 30 pcs ) ======
 - Python Workbook | SKU: PW-001 -> 12 pcs
 - ChatGPT Ebook | SKU: CGPT-01 -> 8 pcs
+```
 
 
-
-## Notes
+### Notes
 
 - Credentials are loaded from environment variables.
 - Do not commit real API keys or SMTP passwords to GitHub.
@@ -87,7 +91,7 @@ Gross revenue yesterday:    89 500 Ft
 - The script sends plain-text email reports.
 
 
-## Future Improvements
+### Future Improvements
 
 - Export report to CSV
 - Add HTML email formatting
