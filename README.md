@@ -46,7 +46,13 @@ This script automates the entire process and sends a daily report via email.
 
 ```bash
 git clone https://github.com/csabametzg/woocommerce-daily-report-automation.git
+```
+
+```bash
 cd woocommerce-daily-report-automation
+```
+
+```bash
 pip install -r requirements.txt
 ```
 
